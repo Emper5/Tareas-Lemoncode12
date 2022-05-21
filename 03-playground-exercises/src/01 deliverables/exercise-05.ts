@@ -23,7 +23,7 @@ class SlothMachine {
         let random = () => Math.random() > 0.5 ? true : false;
         let visor = [random(), random(), random()];
         console.log(visor);
-        if (visor === [true, true, true]){
+        if (visor[0] === true && visor[1] === true && visor[2] === true) {            
             console.log(`Congratulations!!!. You won ${this.coins} coins!!`)
             this.coins = 0;
         }else {
