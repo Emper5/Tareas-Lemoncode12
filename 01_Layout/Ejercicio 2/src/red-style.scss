@@ -1,0 +1,24 @@
+$base-color: red;
+.base {
+    background-color: $base-color;
+}
+
+.important {
+    background-color: darken($base-color, 30%);
+}
+
+.warning {
+    background-color: lighten($base-color, 30%);
+}
+
+.principal-font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secondary-font {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.shadow {
+    box-shadow: -4px 10px 10px;
+}

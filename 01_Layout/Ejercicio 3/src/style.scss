@@ -1,0 +1,51 @@
+html {
+    font-size: 100%;
+}
+
+$primary-color: rgb(19, 90, 138);
+$secondary-color: rgb(3, 44, 67);
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.box {
+    color: white;
+    padding: 10px
+}
+
+.box:hover {
+    background-color: $secondary-color;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        width: 100%;
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 96%;
+            align-items: center;
+        }
+    }
+}

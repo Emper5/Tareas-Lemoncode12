@@ -1,0 +1,51 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  background-color: rgb(19, 90, 138);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.box {
+  color: white;
+  padding: 10px;
+}
+
+.box:hover {
+  background-color: rgb(3, 44, 67);
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    width: 100%;
+    background-color: rgb(19, 90, 138);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .nav-bar .box {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

@@ -1,0 +1,74 @@
+html {
+  font-size: 100%;
+}
+
+.red {
+  --main-color: red;
+}
+
+.blue {
+  --main-color: blue;
+}
+
+.green {
+  --main-color: green;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  width: 15%;
+  height: 100px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  color: rgb(87, 87, 87);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.base-color {
+  background-color: var(--main-color);
+  color: white;
+  width: 20%;
+}
+
+.darken-1 {
+  background-color: #db0000;
+}
+
+.lighten-1 {
+  background-color: #ff2424;
+}
+
+.darken-2 {
+  background-color: #b80000;
+}
+
+.lighten-2 {
+  background-color: #ff4747;
+}
+
+.darken-3 {
+  background-color: #940000;
+}
+
+.lighten-3 {
+  background-color: #ff6b6b;
+}
+
+.darken-4 {
+  background-color: #700000;
+}
+
+.lighten-4 {
+  background-color: #ff8f8f;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

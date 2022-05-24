@@ -1,0 +1,53 @@
+.base {
+  background-color: red;
+}
+
+.important {
+  background-color: #660000;
+}
+
+.warning {
+  background-color: #ff9999;
+}
+
+.principal-font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.secondary-font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.shadow {
+  box-shadow: -4px 10px 10px;
+}
+
+html {
+  font-size: 100%;
+  margin: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+div {
+  margin: 2px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 30px;
+  width: 150px;
+  height: 100px;
+}
+
+.principal-font,
+.secondary-font {
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
