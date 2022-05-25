@@ -1,0 +1,28 @@
+$base-color: blue;
+.base {
+    background-color: $base-color;
+}
+
+.important {
+    background-color: darken($base-color, 30%);
+}
+
+.warning {
+    background-color: lighten($base-color, 30%);
+}
+
+.principal-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secondary-font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.shadow {
+    box-shadow: 6px 10px 10px;
+}
+
+.box {
+    border-radius: 10px;
+}

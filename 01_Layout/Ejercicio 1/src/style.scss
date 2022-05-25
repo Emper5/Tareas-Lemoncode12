@@ -1,0 +1,50 @@
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 3px;
+    color: grey;
+}
+
+@mixin paleta ($color) {
+    .base-color {
+        background-color: $color;
+        color: white;
+        width: 10%;
+    }
+    @for $i from 1 through 4 {
+        .darken-#{$i} {
+            background-color: darken($color, $i * 6%);
+        }
+        .lighten-#{$i} {
+            background-color: lighten($color, $i * 6%);
+        }
+    }
+}
+
+.red {
+    @include paleta(red);
+}
+
+.blue {
+    @include paleta(blue);
+}
+
+.green {
+    @include paleta(green);
+}
+
+.base-color {
+    color: white;
+    width: 20%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 3px;
+    border-radius: 15px;
+}
