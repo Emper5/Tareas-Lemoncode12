@@ -39,18 +39,14 @@
                 flex-grow: 1;
                 display: flex;
                 flex-direction: row;
-                align-items: stretch;
-                position: sticky;
-                top: 0;
+                background-color: rgb(87, 87, 87);
             }
             
             .menu-container {
-                position: sticky;
-                top: 0;
                 display: flex;
                 flex-direction: column;
-                background-color: rgb(87, 87, 87);
                 justify-content: flex-start;
+                background-color: rgb(87, 87, 87);
                 align-items: center;
                 height: 100%;
                 width: 200px;
@@ -64,7 +60,6 @@
             }
             
             .list-menu {
-                position: sticky;
                 display: flex;
                 flex-direction: column;
                 align-self: stretch;
@@ -117,6 +112,7 @@
             }
             
             nav {
+                align-self: flex-start;
                 position: sticky !important;
                 top: 0;
             }
@@ -124,6 +120,11 @@
             @media screen and (max-width: 768px) {
                 .toolbar {
                     display: none;
+                }
+                nav {
+                    align-self: stretch;
+                    position: sticky !important;
+                    top: 0;
                 }
                 .page-container {
                     display: flex;
