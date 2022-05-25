@@ -40,6 +40,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  position: sticky;
+  top: 0;
 }
 
 .menu-container {
@@ -114,6 +116,11 @@ footer {
   background-color: khaki;
 }
 
+nav {
+  position: sticky !important;
+  top: 0;
+}
+
 @media screen and (max-width: 768px) {
   .toolbar {
     display: none;
@@ -138,9 +145,6 @@ footer {
   }
 
   .list-menu {
-    position: sticky !important;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: row;
     align-items: stretch;
