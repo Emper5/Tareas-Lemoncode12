@@ -1,0 +1,38 @@
+<div class="container">
+    <mat-card class="galery-card">
+        <mat-card-header>
+            <div mat-card-avatar class="header-image"></div>
+            <mat-card-title>Michael Scott</mat-card-title>
+            <mat-card-subtitle>God in the earth</mat-card-subtitle>
+        </mat-card-header>
+        <div id="imageContainer">
+            <button mat-icon-button aria-label="Anterior" (click)="beforeImage()">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+          </button>
+            <img id="image" [rotate]="45" [step]="90" src="{{selected.url}}">
+            <button mat-icon-button aria-label="Siguiente" (click)="nextImage()">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+          </button>
+        </div>
+
+        <mat-card-content class="list centered">
+            <button mat-icon-button aria-label="Anterior" (click)="beforeSlice()" disabled="{{this.sliceSelected.id === 0}}">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+            </button>
+            <div class="images" *ngFor="let item of sliceSelected.slice">
+                <img src="{{item.url}}" (click)="select(item)" [ngClass]="{'highlight': item.id === this.selected.id}">
+            </div>
+
+            <button mat-icon-button aria-label="Siguiente" (click)="nextSlice()" disabled="{{this.sliceSelected.id === 2}}">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+        </mat-card-content>
+        <mat-card-actions class="centered">
+
+            <button mat-raised-button color="primary" (click)="makeBigger()">Aumentar</button>
+            <button mat-raised-button color="primary" (click)="makeSmaller()">Disminuir</button>
+            <button mat-raised-button (click)="play()" *ngIf="!isPLaying">Play</button>
+            <button mat-raised-button color="warn" (click)="stop()" *ngIf="isPLaying">Stop</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

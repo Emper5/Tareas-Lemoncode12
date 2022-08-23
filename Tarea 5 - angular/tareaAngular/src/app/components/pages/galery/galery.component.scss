@@ -1,0 +1,43 @@
+.galery-card {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header-image {
+    background-image: url('../../../../assets/images/descarga7.jpg');
+    background-size: cover;
+}
+
+.centered {
+    text-align: center;
+}
+
+#imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.images img {
+    height: 100px;
+    margin: 5px;
+}
+
+.highlight {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #000000;
+}
+
+#image {
+    height: 200px;
+    margin-bottom: 10px;
+}

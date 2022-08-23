@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" class="menu">
+    <span>My App</span>
+    <button mat-button routerLink="dashboard">
+Dashboard
+</button>
+    <button mat-button routerLink="galery">
+  Galeria
+</button>
+    <button mat-button routerLink="CRUD">
+CRUD
+</button>
+    <button mat-button routerLink="profile">
+Perfil
+</button>
+
+    <span class="example-spacer"></span>
+    <span> Hola, {{username()}}</span>
+    <button mat-button (click)="logout()">
+Logout
+</button>
+
+</mat-toolbar>
